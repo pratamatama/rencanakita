@@ -1,9 +1,9 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: 'guest',
+  middleware: 'auth',
 })
 </script>
 
 <template>
-  <LoginForm />
+  <h1>Hello from dashboard!</h1>
 </template>
