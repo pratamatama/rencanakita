@@ -21,7 +21,7 @@ const onClick = (e: Event) => {
     @click="onClick"
     :disabled="disabled"
     :type="type ?? 'submit'"
-    class="bg-blue-500 dark:bg-blue-600 rounded-lg p-3 px-6"
+    class="bg-blue-500 dark:bg-blue-600 hover:bg-blue-600 dark:hover:bg-blue-700 rounded-lg p-3 px-6 transition-colors duration-200"
   >
     <span class="text-sm font-medium">
       <slot />
