@@ -6,7 +6,7 @@ const client = useSupabaseAuthClient()
 const router = useRouter()
 
 const loginWithGoogle = async () => {
-  const { error, data } = await client.auth.signInWithOAuth({
+  const { error } = await client.auth.signInWithOAuth({
     provider: 'google',
   })
 
@@ -14,8 +14,7 @@ const loginWithGoogle = async () => {
     return alert('Something went wrong!')
   }
 
-  console.log(data)
-  // router.push({ name: 'dashboard' })
+  router.push({ name: 'dashboard' })
 }
 
 const loginWithEmail = (data: any) => {
