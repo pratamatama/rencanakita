@@ -10,7 +10,12 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.5",
+    "@tailwindcss/forms": "^0.5.3",
     "@types/node": "^18.15.11",
     "nuxt": "^3.4.0"
+  },
+  "dependencies": {
+    "vee-validate": "^4.8.4",
+    "yup": "^1.0.2"
   }
 }
